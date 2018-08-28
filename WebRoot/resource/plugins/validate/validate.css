@@ -1,0 +1,12 @@
+/**
+ * jquery validate CSS
+ *
+ * @auth Yuan Jingshan
+ * @date 2017/3/26
+ */
+label.has-error {
+    color: red;
+    font-style:italic;
+    font-size: 14px;
+    margin-right:5px;
+}
