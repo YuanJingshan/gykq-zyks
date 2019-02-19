@@ -1,5 +1,13 @@
 /.metadata/
 /.settings/
+/Servers/
+
 .classpath
 .mymetadata
 .project
+
+/.idea/
+.reverse.properties
+.tern-project
+gykq-zyks.iml
+

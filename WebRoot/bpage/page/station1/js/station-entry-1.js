@@ -26,7 +26,7 @@ function station1Start() {
 	// 寻找读卡器
 	FindReader();
 	// 开始自动读卡
-	setInterval(station1ReadCard, 1000);
+	setInterval(station1ReadCard, 3000);
 }
 
 /**
@@ -164,7 +164,7 @@ $(function(){
 	$("#entried-info-n").setTemplateElement("entried-info-m");
 	
 	// 启动读卡器
-	//station1Start();
+	station1Start();
 	// 候考区考生信息
 	displayStation1Inspected();
 	// 考区考生信息

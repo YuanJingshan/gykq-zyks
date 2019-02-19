@@ -14,7 +14,7 @@ function exitVerifyStart() {
 	// 寻找读卡器
 	FindReader();
 	// 开始自动读卡
-	setInterval(exitReadCard, 1000);
+	setInterval(exitReadCard, 3000);
 }
 
 /**

@@ -170,7 +170,7 @@ $(function(){
 	$("#entried-info-n").setTemplateElement("entried-info-m");
 	
 	// 启动读卡器
-	//station2Start();
+	station2Start();
 	// 候考区考生信息
 	displayStation2NotEntry();
 	// 考区考生信息

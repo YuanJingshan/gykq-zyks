@@ -11,7 +11,7 @@
 			// 考区考生信息
 			$("#exam_info_n").setTemplateElement("exam_info_m");
 			// 启动读卡器
-			//$.doctoreaxm.station.inspect.stationStart();
+			$.doctoreaxm.station.inspect.stationStart();
 			// 候考区考生信息
 			$.doctoreaxm.station.inspect.wait();
 			// 考区考生信息
@@ -48,7 +48,7 @@
 			// 寻找读卡器
 			FindReader();
 			// 开始自动读卡
-			setInterval($.doctoreaxm.station.inspect.readCard, 1000);
+			setInterval($.doctoreaxm.station.inspect.readCard, 3000);
 		},
 		//开始读卡
 		readCard: function() {
@@ -71,7 +71,8 @@
 				},
 				success: function(data){
 					if (data.result == 0) {
-						toastr.info("未检录，请到入口处检录！");
+						
+						$.common.layer.msg("未检录，请到入口处检录！", {icon: 2});
 					} else {
 						$.doctoreaxm.station.inspect.displayInfo(data.info);
 					}

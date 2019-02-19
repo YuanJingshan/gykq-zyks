@@ -29,7 +29,7 @@ function start() {
 	// 寻找读卡器
 	FindReader();
 	// 开始自动读卡
-	setInterval(ReadCard, 1000);
+	setInterval(ReadCard, 3000);
 }
 
 /**
@@ -161,7 +161,7 @@ $(function(){
 	// 检录正在进入第一站的考生
 	$("#tmplete-n").setTemplateElement("tmplete-m");
 	// 启动读卡器
-	//start();
+	start();
 	// 未进入考生考生
 	getNotEntStryation1Doctor();
 	// 正在进入考站的考生
